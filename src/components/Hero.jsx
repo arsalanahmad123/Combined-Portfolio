@@ -94,7 +94,12 @@ const Hero = () => {
                             delay: 3,
                         }}
                     >
-                        <img src={heroImage} className='z-50 -mt-16 ' alt='' />
+                        <img
+                            src={heroImage}
+                            className='z-50 -mt-16 '
+                            alt=''
+                            loading='lazy'
+                        />
                         <div className='absolute bottom-32 right-7 h-96 w-96 -z-[10] bg-gradient-to-l from-[#6d86ad] to-[#b89099]  rounded-2xl'></div>
                     </motion.div>
                 </div>

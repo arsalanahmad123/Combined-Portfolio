@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import aboutImage from '../assets/about.png'
 
 const About = () => {
     return (
@@ -39,7 +40,8 @@ const About = () => {
                 className='bg-[#1a2c3a] rounded-3xl lg:h-[500px]'
             >
                 <img
-                    src='./src/assets/about.png'
+                    src={aboutImage}
+                    loading='lazy'
                     className='bg-contain bg-center bg-no-repeat h-full w-full rounded-3xl'
                     alt=''
                 />

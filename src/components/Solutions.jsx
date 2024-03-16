@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import hands from '../assets/hands.png'
 
 const Solutions = () => {
     console.log('Solutions rendered')
@@ -43,7 +44,8 @@ const Solutions = () => {
                     }}
                 ></motion.div>
                 <img
-                    src='./src/assets/hands.png'
+                    src={hands}
+                    loading='lazy'
                     alt=''
                     id='hands'
                     data-scroll
