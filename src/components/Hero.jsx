@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from './Layout'
 import { motion } from 'framer-motion'
+import heroImage from '../assets/hero-image.png'
 
 const Hero = () => {
     const containerVariants = {
@@ -93,11 +94,7 @@ const Hero = () => {
                             delay: 3,
                         }}
                     >
-                        <img
-                            src='/assets/hero-image.png'
-                            className='z-50 -mt-16 '
-                            alt=''
-                        />
+                        <img src={heroImage} className='z-50 -mt-16 ' alt='' />
                         <div className='absolute bottom-32 right-7 h-96 w-96 -z-[10] bg-gradient-to-l from-[#6d86ad] to-[#b89099]  rounded-2xl'></div>
                     </motion.div>
                 </div>
