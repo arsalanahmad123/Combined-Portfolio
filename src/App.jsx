@@ -8,12 +8,22 @@ import Services from './components/Services'
 import Solutions from './components/Solutions'
 import Loader from './components/Loader'
 import SelectedWork from './components/SelectedWork'
+import { motion } from 'framer-motion'
 
 function App() {
     const [loading, setIsLoading] = useState(true)
     const ref = useRef(null)
     const options = {
         smooth: true,
+    }
+
+    const [cursorPostion, setCursorPosition] = useState({ x: 0, y: 0 })
+
+    const handleMouseMove = (e) => {
+        setCursorPosition({
+            x: e.clientX,
+            y: e.clientY,
+        })
     }
 
     useEffect(() => {
@@ -25,7 +35,11 @@ function App() {
     return (
         <>
             <LocomotiveScrollProvider options={options} containerRef={ref}>
-                <main data-scroll-container ref={ref}>
+                <main
+                    data-scroll-container
+                    ref={ref}
+                    onMouseMove={handleMouseMove}
+                >
                     <Hero />
                     <TextCarousel />
                     <About />
@@ -33,6 +47,7 @@ function App() {
                     <Solutions />
                     <SelectedWork />
                     {loading && <Loader />}
+                    motion
                 </main>
             </LocomotiveScrollProvider>
         </>

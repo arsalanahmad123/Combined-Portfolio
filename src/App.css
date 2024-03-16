@@ -9,6 +9,8 @@ body {
     background: white;
     overflow-x: hidden;
     overflow-y: hidden;
+    scroll-behavior: smooth;
+    position: relative;
 }
 
 html {

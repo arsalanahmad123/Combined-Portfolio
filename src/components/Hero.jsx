@@ -94,7 +94,7 @@ const Hero = () => {
                         }}
                     >
                         <img
-                            src='/src/assets/hero-image.png'
+                            src='/assets/hero-image.png'
                             className='z-50 -mt-16 '
                             alt=''
                         />

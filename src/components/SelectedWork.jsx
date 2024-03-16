@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 const SelectedWork = () => {
     const [showFirstProject, setShowFirstProject] = useState(false)
+    const [showSecondProject, setShowSecondProject] = useState(false)
 
     const textVariants = {
-        initial: { opacity: 0, y: 20 },
+        initial: { opacity: 0, y: -100 },
         animate: { opacity: 1, y: 0 },
-        exit: { opacity: 0, y: -20 },
+        exit: { opacity: 0, y: -100 },
     }
 
     return (
         <>
             <section
-                className='w-full  h-screen flex justify-start items-center bg-[#1a2c3a] flex-col py-28 gap-y-28 mb-10'
+                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-28 gap-y-28 mb-10'
                 data-scroll
                 data-scroll-section
                 data-scroll-snap
@@ -22,9 +23,12 @@ const SelectedWork = () => {
                         Selected Work
                     </span>
                 </h1>
-                <div className='flex justify-between items-center gap-x-10 w-full px-10 flex-wrap'>
+                <div className='flex justify-between items-center  w-full px-10 flex-row  relative  gap-x-5'>
                     <div
-                        className='flex justify-center items-center bg-white  rounded-md w-2/5 relative overflow-hidden group'
+                        className=' md:w-[50%] rounded-md  group overflow-hidden'
+                        data-scroll
+                        data-scroll-direction='horizontal'
+                        data-scroll-speed='0.5'
                         onMouseOver={() =>
                             setShowFirstProject(!showFirstProject)
                         }
@@ -34,38 +38,65 @@ const SelectedWork = () => {
                     >
                         <img
                             src='https://picsum.photos/400'
-                            className='w-full h-full group-hover:scale-105 duration-300 object-cover group-hover:ease-linear group-hover:filter group-hover:brightness-50 group-hover:blur-sm'
+                            className='w-full h-full group-hover:scale-105 duration-300 object-cover group-hover:ease-linear group-hover:filter group-hover:brightness-50 '
                             alt=''
                         />
-                        <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center tracking-widest monster text-7xl text-white font-bold '>
-                            {showFirstProject &&
-                                'Project'.split('').map((letter, index) => (
-                                    <motion.span
-                                        key={index}
-                                        variants={textVariants}
-                                        initial='initial'
-                                        animate='animate'
-                                        exit='exit'
-                                        transition={{
-                                            duration: index * 0.1,
-                                            delay: index * 0.1,
-                                            ease: 'easeInOut',
-                                            damping: 0.5,
-                                            mass: 0.5,
-                                            type: 'tween',
-                                            stagger: 0.1,
-                                        }}
-                                    >
-                                        {letter}
-                                    </motion.span>
-                                ))}
-                        </div>
                     </div>
-                    <div className='flex justify-center items-center bg-white  rounded-md w-2/5 relative'>
+                    <motion.div
+                        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  tracking-widest monster text-8xl text-white font-bold shadow-xl'
+                        style={{ zIndex: 1100 }}
+                    >
+                        {showFirstProject &&
+                            'FIRST'.split('').map((letter, index) => (
+                                <motion.span
+                                    key={index}
+                                    variants={textVariants}
+                                    initial='initial'
+                                    animate='animate'
+                                    exit='exit'
+                                    transition={{
+                                        duration: 0.5,
+                                        delay: index * 0.1,
+                                        ease: 'easeInOut',
+                                    }}
+                                >
+                                    {letter}
+                                </motion.span>
+                            ))}
+                        {showSecondProject &&
+                            'SECOND'.split('').map((letter, index) => (
+                                <motion.span
+                                    key={index}
+                                    variants={textVariants}
+                                    initial='initial'
+                                    animate='animate'
+                                    exit='exit'
+                                    transition={{
+                                        duration: 0.5,
+                                        delay: index * 0.1,
+                                        ease: 'easeInOut',
+                                    }}
+                                >
+                                    {letter}
+                                </motion.span>
+                            ))}
+                    </motion.div>
+                    <div
+                        className=' md:w-[50%] rounded-md  group overflow-hidden'
+                        data-scroll
+                        data-scroll-direction='horizontal'
+                        data-scroll-speed='0.5'
+                        onMouseOver={() =>
+                            setShowSecondProject(!showSecondProject)
+                        }
+                        onMouseOut={() =>
+                            setShowSecondProject(!showSecondProject)
+                        }
+                    >
                         <img
                             src='https://picsum.photos/400'
+                            className='w-full h-full group-hover:scale-105 duration-300 object-cover group-hover:ease-linear group-hover:filter group-hover:brightness-50 '
                             alt=''
-                            className='w-full h-full'
                         />
                     </div>
                 </div>
