@@ -43,7 +43,7 @@ const SelectedWork = () => {
                         />
                     </div>
                     <motion.div
-                        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  tracking-widest monster text-8xl text-white font-bold shadow-xl'
+                        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  tracking-widest monster text-8xl text-white font-bold shadow-xl pointer-events-none'
                         style={{ zIndex: 1100 }}
                     >
                         {showFirstProject &&
