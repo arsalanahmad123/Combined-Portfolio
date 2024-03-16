@@ -8,7 +8,6 @@ import Services from './components/Services'
 import Solutions from './components/Solutions'
 import Loader from './components/Loader'
 import SelectedWork from './components/SelectedWork'
-import { motion } from 'framer-motion'
 
 function App() {
     const [loading, setIsLoading] = useState(true)

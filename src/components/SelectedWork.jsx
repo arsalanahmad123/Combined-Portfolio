@@ -1,19 +1,25 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 const SelectedWork = () => {
-    const [showFirstProject, setShowFirstProject] = useState(false)
-    const [showSecondProject, setShowSecondProject] = useState(false)
+    const [projects, setProjects] = useState([
+        {
+            name: 'Project 1',
+            image: 'https://picsum.photos/id/0/1290/400',
+        },
+        {
+            name: 'Project 2',
+            image: 'https://picsum.photos/id/1/1290/400',
+        },
+    ])
 
-    const textVariants = {
-        initial: { opacity: 0, y: -100 },
-        animate: { opacity: 1, y: 0 },
-        exit: { opacity: 0, y: -100 },
-    }
+    const [selectedProject, setSelectedProject] = useState(projects[0])
+
+    console.log(selectedProject)
 
     return (
         <>
             <section
-                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-28 gap-y-28 mb-10'
+                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-40 gap-y-28 mb-20 px-20'
                 data-scroll
                 data-scroll-section
                 data-scroll-snap
@@ -23,81 +29,44 @@ const SelectedWork = () => {
                         Selected Work
                     </span>
                 </h1>
-                <div className='flex justify-between items-center  w-full px-10 flex-row  relative  gap-x-5'>
-                    <div
-                        className=' md:w-[50%] rounded-md  group overflow-hidden'
-                        data-scroll
-                        data-scroll-direction='horizontal'
-                        data-scroll-speed='0.5'
-                        onMouseOver={() =>
-                            setShowFirstProject(!showFirstProject)
-                        }
-                        onMouseOut={() =>
-                            setShowFirstProject(!showFirstProject)
-                        }
-                    >
-                        <img
-                            src='https://picsum.photos/400'
-                            className='w-full h-full group-hover:scale-105 duration-300 object-cover group-hover:ease-linear group-hover:filter group-hover:brightness-50 '
-                            alt=''
+
+                <div
+                    className='w-full bg-black min-h-[50vh] shadow-2xl shadow-slate-600 relative h-full'
+                    data-scroll
+                    data-scroll-snap
+                    data-scroll-direction='vertical'
+                    data-scroll-speed='-2'
+                >
+                    <div className='overflow-hidden '>
+                        <motion.img
+                            key={selectedProject.image}
+                            src={selectedProject.image}
+                            className='bg-cover h-full w-full object-cover'
+                            alt='Project Image'
+                            initial={{ opacity: 0, scale: 0 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{
+                                duration: 1.5,
+                                ease: 'backInOut',
+                            }}
                         />
                     </div>
-                    <motion.div
-                        className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  tracking-widest monster text-8xl text-white font-bold shadow-xl pointer-events-none'
-                        style={{ zIndex: 1100 }}
-                    >
-                        {showFirstProject &&
-                            'FIRST'.split('').map((letter, index) => (
-                                <motion.span
-                                    key={index}
-                                    variants={textVariants}
-                                    initial='initial'
-                                    animate='animate'
-                                    exit='exit'
-                                    transition={{
-                                        duration: 0.5,
-                                        delay: index * 0.1,
-                                        ease: 'easeInOut',
-                                    }}
-                                >
-                                    {letter}
-                                </motion.span>
-                            ))}
-                        {showSecondProject &&
-                            'SECOND'.split('').map((letter, index) => (
-                                <motion.span
-                                    key={index}
-                                    variants={textVariants}
-                                    initial='initial'
-                                    animate='animate'
-                                    exit='exit'
-                                    transition={{
-                                        duration: 0.5,
-                                        delay: index * 0.1,
-                                        ease: 'easeInOut',
-                                    }}
-                                >
-                                    {letter}
-                                </motion.span>
-                            ))}
-                    </motion.div>
-                    <div
-                        className=' md:w-[50%] rounded-md  group overflow-hidden'
-                        data-scroll
-                        data-scroll-direction='horizontal'
-                        data-scroll-speed='0.5'
-                        onMouseOver={() =>
-                            setShowSecondProject(!showSecondProject)
-                        }
-                        onMouseOut={() =>
-                            setShowSecondProject(!showSecondProject)
-                        }
-                    >
-                        <img
-                            src='https://picsum.photos/400'
-                            className='w-full h-full group-hover:scale-105 duration-300 object-cover group-hover:ease-linear group-hover:filter group-hover:brightness-50 '
-                            alt=''
-                        />
+                    <div className='absolute top-0 left-0 h-full w-full bg-black opacity-50 flex justify-center items-center'>
+                        <h1 className='text-7xl font-semibold poppins bg-clip-text text-white'>
+                            {selectedProject.name}
+                        </h1>
+                    </div>
+                    <div className='absolute -bottom-20 left-0 h-20 w-full bg-white flex justify-center items-center p-2 shadow-inner shadow-black'>
+                        {projects.map((project, index) => (
+                            <h1
+                                className='text-lg font-semibold poppins   border h-full flex justify-center items-center p-2 cursor-pointer'
+                                key={index}
+                                onClick={() => setSelectedProject(project)}
+                            >
+                                {project.name}
+                            </h1>
+                        ))}
                     </div>
                 </div>
             </section>

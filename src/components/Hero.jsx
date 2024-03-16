@@ -21,6 +21,7 @@ const Hero = () => {
     return (
         <>
             <motion.div
+                id='hero'
                 className='flex justify-center items-center min-h-screen max-h-[120vh] bg-[#1a2c3a] relative'
                 initial='initial'
                 animate='animate'
