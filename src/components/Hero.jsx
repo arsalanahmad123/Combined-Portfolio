@@ -20,7 +20,7 @@ const Hero = () => {
     return (
         <>
             <motion.div
-                className='flex justify-center items-center h-screen bg-[#1a2c3a] relative'
+                className='flex justify-center items-center min-h-screen max-h-[120vh] bg-[#1a2c3a] relative'
                 initial='initial'
                 animate='animate'
                 variants={containerVariants}
@@ -29,10 +29,11 @@ const Hero = () => {
                 data-scroll-section
                 data-scroll-snap
             >
-                <div className='absolute top-0 left-96 h-24 w-24 bg-[#c3fafc]  rounded-full'></div>
-                <div className='absolute top-0 right-5 h-24 w-24  bg-[#b89099]  rounded-full'></div>
+                <div className='absolute top-0 left-96 h-16 w-16 bg-[#6d86ad]  rounded-full'></div>
+                <div className='absolute top-7 right-20 h-20 w-20  bg-[#b89099]  rounded-full'></div>
                 <div className='absolute bottom-0 right-5 h-24 w-24  bg-[#6d86ad] z-50 rounded-full'></div>
-                <div className='absolute bottom-0 left-5 h-24 w-24  bg-[#c3fafc]  rounded-full z-50'></div>
+                <div className='absolute bottom-16 left-5 h-10 w-10  bg-[#b89099]  rounded-full z-50'></div>
+                <div className='absolute top-40 left-96 h-4 w-4  bg-[#b89099]  rounded-full z-50'></div>
 
                 <div className='lg:h-[80vh]  bg-white min-h-screen lg:w-[90%] w-full flex lg:justify-between lg:items-start    lg:rounded-lg md:flex-row flex-col gap-y-10 justify-between items-center lg:mt-20 relative py-20 lg:py-0'>
                     <div className='monster flex flex-col gap-y-2 lg:p-28  px-5 md:w-[50%] '>
@@ -83,7 +84,7 @@ const Hero = () => {
                         </motion.button>
                     </div>
                     <motion.div
-                        className='h-full '
+                        className='h-full relative z-50'
                         initial={{ x: 100, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
                         transition={{
@@ -94,9 +95,10 @@ const Hero = () => {
                     >
                         <img
                             src='/src/assets/hero-image.png'
-                            className=''
+                            className='z-50 -mt-16 '
                             alt=''
                         />
+                        <div className='absolute bottom-32 right-7 h-96 w-96 -z-[10] bg-gradient-to-l from-[#6d86ad] to-[#b89099]  rounded-2xl'></div>
                     </motion.div>
                 </div>
             </motion.div>

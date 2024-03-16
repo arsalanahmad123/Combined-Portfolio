@@ -11,6 +11,10 @@ body {
     overflow-y: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .card {
     background: linear-gradient(45deg, #6d86ad, #c3fafc, #b89099);
 }

@@ -14,7 +14,7 @@ const Services = () => {
     return (
         <>
             <section
-                className='bg-[#1a2c3a] poppins text-white flex justify-center items-center py-52 min-h-screen w-full  flex-col gap-y-10 overflow-hidden'
+                className='bg-[#1a2c3a] poppins text-white flex justify-center items-center py-52 min-h-[150vh] max-h-[300vh] w-full  flex-col gap-y-10 overflow-hidden'
                 data-scroll-section
             >
                 <motion.div

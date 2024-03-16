@@ -6,7 +6,7 @@ const Solutions = () => {
     return (
         <>
             <div
-                className='bg-white p-10 h-screen w-full flex justify-center items-center  flex-col cursive relative'
+                className='bg-white p-10 min-h-screen max-h-[200vh] w-full flex justify-center items-center  flex-col cursive relative'
                 data-scroll
                 data-scroll-section
             >

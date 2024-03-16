@@ -4,8 +4,9 @@ import { motion } from 'framer-motion'
 const About = () => {
     return (
         <section
-            className='h-screen flex justify-around items-center w-full monster  bg-white title poppins md:pt-20 flex-col lg:flex-row relative'
+            className='min-h-screen max-h-[120vh] flex justify-around items-center w-full monster  bg-white title poppins md:pt-20 flex-col lg:flex-row relative'
             data-scroll-section
+            id='about'
         >
             <motion.div
                 className='absolute top-10 left-10 bg-[#b89099]  h-20 w-20 clip-path'

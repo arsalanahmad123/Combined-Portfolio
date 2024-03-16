@@ -19,7 +19,9 @@ const NavMenu = () => {
                     <li className='cursor-pointer text-left relative'>
                         <a href='#hero'>Home</a>
                     </li>
-                    <li className='cursor-pointer text-left relative'>About</li>
+                    <li className='cursor-pointer text-left relative'>
+                        <a href='#about'>About</a>
+                    </li>
                     <li className='cursor-pointer text-left relative'>
                         Skills
                     </li>
