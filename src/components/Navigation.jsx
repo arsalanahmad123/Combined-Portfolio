@@ -8,24 +8,22 @@ const Navigation = () => {
     return (
         <div>
             <div
-                className={` fixed top-2 right-2 poppins font-semibold rounded-md  transition-all duration-500 ease-in-out text-center bg-white shadow-2xl ${
-                    active
-                        ? 'xl:h-[11vh] xl:w-[40vw] h-[20vh] w-[50vw] md:h-[10vh] md:w-[50vw]'
-                        : 'w-0 h-0'
+                className={` fixed top-2 right-2 poppins font-semibold rounded-md   transition-all duration-500 ease-in-out text-center bg-white bg-opacity-80  shadow-2xl shadow-black min-h-screen ${
+                    active ? 'w-52 h-screen' : 'w-0'
                 }`}
                 style={{ zIndex: 10 }}
             >
                 {active && <NavMenu />}
                 {!active ? (
                     <button
-                        className='flex justify-center items-center gap-x-1 text-gray-800 fixed top-2 right-2 p-2 cursor-pointer lg:text-5xl text-3xl bg-white shadow-2xl shadow-black rounded-md transition-all duration-500 ease-in-out'
+                        className='flex justify-center items-center gap-x-1 text-gray-800 fixed top-2 right-2 p-2 cursor-pointer lg:text-5xl text-3xl bg-white  shadow-2xl shadow-black rounded-md transition-all duration-500 ease-in-out'
                         onClick={() => setIsActive(!active)}
                     >
                         <MenuIcon />
                     </button>
                 ) : (
                     <button
-                        className='flex justify-center items-center gap-x-1 text-gray-800 fixed right-2 top-2 p-2 cursor-pointer lg:text-5xl text-3xl bg-white shadow-2xl shadow-black rounded-md transition-all duration-500 ease-in-out '
+                        className='flex justify-center items-center gap-x-1 text-gray-800 fixed right-2 top-2 p-2 cursor-pointer lg:text-5xl text-3xl bg-white bg-opacity-80  rounded-md transition-all duration-500 ease-in-out '
                         onClick={() => setIsActive(!active)}
                     >
                         <CloseIcon />

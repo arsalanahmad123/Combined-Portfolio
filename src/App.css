@@ -45,7 +45,7 @@ li::before {
     height: 5px;
     border-radius: 5px;
     width: 0%;
-    background: linear-gradient(to right, #6d86ad, #c3fafc, #b89099);
+    background: #1a2c3a;
 }
 
 li:hover::before {
@@ -77,6 +77,10 @@ html.has-scroll-smooth {
     z-index: -1;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+}
+
+.navigation {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 #hands {
