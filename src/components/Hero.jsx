@@ -101,7 +101,7 @@ const Hero = () => {
                             alt=''
                             loading='lazy'
                         />
-                        <div className='absolute bottom-32 right-7 h-96 w-96 -z-[10] bg-gradient-to-l from-[#6d86ad] to-[#b89099]  rounded-2xl'></div>
+                        <div className='absolute bottom-32 md:right-7 right-3  md:h-96 md:w-96 -z-[10] bg-gradient-to-l from-[#6d86ad] to-[#b89099] h-[20rem] w-[20rem]  rounded-2xl'></div>
                     </motion.div>
                 </div>
             </motion.div>

@@ -18,37 +18,24 @@ const Services = () => {
                 data-scroll-section
             >
                 <motion.div
-                    className='flex justify-between items-center px-5 
+                    className='flex flex-col md:flex-row justify-between items-center px-5
+                    gap-y-10 
                     '
                     data-scroll
-                    data-scroll-direction='horizontal'
+                    data-scroll-direction='vertical'
                     data-scroll-speed='-2'
                     data-scroll-position='end'
                 >
-                    <motion.h3
-                        className='text-6xl font-semibold bg-gradient-to-t from-[#1a2c3a] to-[#f3f3f3] bg-clip-text text-transparent tracking-widest'
-                        initial={{ skewY: 360 }}
-                        whileInView={{ skewY: 0 }}
-                        transition={{
-                            repeatType: 'mirror',
-                            duration: 1.5,
-                            ease: 'backInOut',
-                        }}
-                    >
+                    <h3 className='md:text-6xl text-4xl font-semibold bg-gradient-to-t from-[#1a2c3a] to-[#f3f3f3] bg-clip-text text-transparent tracking-widest'>
                         SERVICES & DISCUSSIONS
-                    </motion.h3>
-                    <p
-                        className='text-lg'
-                        data-scroll
-                        data-scroll-direction='horizontal'
-                        data-scroll-speed='5'
-                    >
+                    </h3>
+                    <p className='text-lg mb-10 text-center'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Nam, atque?
                     </p>
                 </motion.div>
                 <motion.div
-                    className='w-[80%] mx-auto bg-white mt-20 rounded-md h-[400px] flex justify-center items-center p-2 gap-x-2 monster'
+                    className='w-[80%] mx-auto bg-white mt-20 rounded-md md:h-[400px] flex flex-col md:flex-row  justify-center items-center p-2 gap-x-2 monster gap-y-2'
                     data-scroll
                     data-scroll-speed='-1'
                     data-scroll-direction='vertical'
@@ -111,7 +98,7 @@ const Services = () => {
                         whileInView='whileInView'
                         exit='exit'
                         transition={{
-                            duration: 1,
+                            duration: 1.5,
                             ease: 'backInOut',
                         }}
                     >
@@ -137,7 +124,7 @@ const Services = () => {
                         whileInView='whileInView'
                         exit='exit'
                         transition={{
-                            duration: 1,
+                            duration: 2,
                             ease: 'backInOut',
                         }}
                     >

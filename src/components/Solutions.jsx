@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import hands from '../assets/hands.png'
 
 const Solutions = () => {
-    console.log('Solutions rendered')
     return (
         <>
             <div

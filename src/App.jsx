@@ -13,9 +13,6 @@ import Experience from './components/Experience'
 function App() {
     const [loading, setIsLoading] = useState(true)
     const ref = useRef(null)
-    const options = {
-        smooth: true,
-    }
 
     useEffect(() => {
         setTimeout(() => {
@@ -25,7 +22,7 @@ function App() {
 
     return (
         <>
-            <LocomotiveScrollProvider options={options} containerRef={ref}>
+            <LocomotiveScrollProvider options={{ smooth: true }} watch={[]}>
                 <main data-scroll-container ref={ref}>
                     <Hero />
                     <TextCarousel />

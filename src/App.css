@@ -108,3 +108,14 @@ html.has-scroll-smooth {
         transform: rotate(0);
     }
 }
+
+@media screen and (max-width: 600px) {
+    .solutions::before {
+        display: none;
+    }
+    .solutions {
+        background: #1a2c3a;
+        border-radius: 50px;
+        line-height: 8.5rem;
+    }
+}

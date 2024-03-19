@@ -5,12 +5,12 @@ import aboutImage from '../assets/about.png'
 const About = () => {
     return (
         <section
-            className='min-h-screen max-h-[120vh] flex justify-around items-center w-full monster  bg-white title poppins md:pt-20 flex-col lg:flex-row relative'
+            className='min-h-screen md:max-h-[120vh] flex justify-around items-center w-full monster  bg-white title poppins md:pt-20 flex-col-reverse lg:flex-row relative pt-28 px-5 md:px-0'
             data-scroll-section
             id='about'
         >
             <motion.div
-                className='absolute top-10 left-10 bg-[#b89099]  h-20 w-20 clip-path'
+                className='md:block md:absolute md:top-10 hidden left-10 bg-[#b89099]  h-20 w-20 clip-path'
                 initial={{ opacity: 0, scale: 0, rotate: 0 }}
                 animate={{ opacity: 1, scale: 1, rotate: 360 }}
                 transition={{
@@ -22,7 +22,7 @@ const About = () => {
                 }}
             ></motion.div>
             <motion.div
-                className='absolute bottom-10 left-[30rem]  bg-[#6d86ad] h-20 w-20 clip-path'
+                className='md:block md:absolute bottom-10 hidden left-[30rem]  bg-[#6d86ad] h-20 w-20 clip-path'
                 initial={{ opacity: 0, scale: 0, rotate: 0 }}
                 animate={{ opacity: 1, scale: 1, rotate: 360 }}
                 transition={{
@@ -37,7 +37,7 @@ const About = () => {
                 data-scroll
                 data-scroll-direction='horizontal'
                 data-scroll-speed='3'
-                className='bg-[#1a2c3a] rounded-3xl lg:h-[500px]'
+                className='bg-[#1a2c3a] rounded-3xl lg:h-[500px] mb-10'
             >
                 <img
                     src={aboutImage}
@@ -47,7 +47,7 @@ const About = () => {
                 />
             </motion.div>
             <motion.div
-                className='flex justify-start items-start flex-col md:w-[50%] gap-y-4 py-10 h-full'
+                className='flex justify-start items-start flex-col md:w-[50%] gap-y-4 h-full'
                 data-scroll
                 data-scroll-direction='vertical'
                 data-scroll-speed='3'

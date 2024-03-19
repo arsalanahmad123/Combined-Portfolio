@@ -4,11 +4,11 @@ const SelectedWork = () => {
     const [projects, setProjects] = useState([
         {
             name: 'Project 1',
-            image: 'https://picsum.photos/id/0/1290/600',
+            image: 'https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
         {
             name: 'Project 2',
-            image: 'https://picsum.photos/id/1/1290/600',
+            image: 'https://images.unsplash.com/photo-1593696954577-ab3d39317b97?q=80&w=1466&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         },
     ])
 
@@ -29,18 +29,18 @@ const SelectedWork = () => {
                 </h1>
 
                 <div
-                    className='w-full flex flex-col md:flex-row justify-between items-start  min-h-[70vh]   h-full'
+                    className='w-full flex flex-col md:flex-row justify-start items-start  max-h-[100vh]   h-full '
                     data-scroll
                     data-scroll-snap
                     data-scroll-direction='vertical'
                     data-scroll-speed='-2'
                 >
-                    <div className='h-full md:w-2/3 block'>
-                        <div className='overflow-hidden block relative'>
+                    <div className='max-h-full md:w-2/3 bg-white bg-opacity-60'>
+                        <div className='overflow-hidden  relative group'>
                             <motion.img
                                 key={selectedProject.image}
                                 src={selectedProject.image}
-                                className=' h-full w-full object-cover shadow-2xl'
+                                className=' h-[90vh] w-full object-cover shadow-2xl  group-hover:scale-110 transition-all duration-500 ease-in-out '
                                 alt='Project Image'
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
@@ -49,21 +49,20 @@ const SelectedWork = () => {
                                     duration: 1.5,
                                     ease: 'backInOut',
                                 }}
+                                loading='lazy'
                             />
-                            <motion.h1
+                            <motion.div
                                 key={selectedProject.name}
-                                className='md:text-7xl text-5xl font-semibold poppins bg-clip-text text-white hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{
-                                    duration: 1.5,
-                                    ease: 'backInOut',
-                                    delay: 0.5,
-                                }}
+                                className=' poppins  text-white hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block group-hover:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-black md:px-40 w-full md:py-32 bg-opacity-75 py-60 px-2'
                             >
-                                {selectedProject.name}
-                            </motion.h1>
+                                <h1 className='md:text-6xl text-4xl font-semibold'>
+                                    {selectedProject.name}
+                                </h1>
+                                <p className='text-lg mt-2'>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nostrum, quidem!
+                                </p>
+                            </motion.div>
                         </div>
                     </div>
                     <div className='w-full flex flex-row md:flex-col bg-white md:w-1/3 overflow-hidden h-full'>
