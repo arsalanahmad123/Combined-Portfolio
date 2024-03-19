@@ -24,7 +24,7 @@ const SelectedWork = () => {
                     Selected Work
                 </h1>
 
-                <div className='w-full flex flex-col md:flex-row justify-start items-start  md:max-h-[100vh]   h-full max-h-[60vh]'>
+                <div className='w-full flex flex-col md:flex-row md:justify-start md:items-start  md:max-h-[100vh]   h-full max-h-[60vh] justify-center items-center'>
                     <div className='max-h-full md:w-2/3 w-full bg-white bg-opacity-60'>
                         <div className='overflow-hidden  relative group'>
                             <motion.img
@@ -43,7 +43,7 @@ const SelectedWork = () => {
                             />
                             <motion.div
                                 key={selectedProject.name}
-                                className=' poppins  text-white hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block group-hover:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-black md:px-40 w-full md:py-32 bg-opacity-75 py-60 px-2'
+                                className=' poppins  text-white hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block group-hover:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-black md:px-40 w-full md:py-96 bg-opacity-75 py-60 px-2'
                             >
                                 <h1 className='md:text-6xl text-4xl font-semibold'>
                                     {selectedProject.name}
