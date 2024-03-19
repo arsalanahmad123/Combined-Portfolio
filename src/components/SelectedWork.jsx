@@ -22,14 +22,18 @@ const SelectedWork = () => {
                 data-scroll-section
                 data-scroll-snap
             >
-                <h1>
-                    <span className='text-5xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '>
-                        Selected Work
-                    </span>
+                <h1
+                    className='text-5xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '
+                    data-scroll
+                    data-scroll-snap
+                    data-scroll-direction='vertical'
+                    data-scroll-speed='-2'
+                >
+                    Selected Work
                 </h1>
 
                 <div
-                    className='w-full flex flex-col md:flex-row justify-start items-start  max-h-[100vh]   h-full '
+                    className='w-full flex flex-col md:flex-row justify-start items-start  md:max-h-[100vh]   h-full max-h-[60vh]'
                     data-scroll
                     data-scroll-snap
                     data-scroll-direction='vertical'
@@ -40,7 +44,7 @@ const SelectedWork = () => {
                             <motion.img
                                 key={selectedProject.image}
                                 src={selectedProject.image}
-                                className=' h-[90vh] w-full object-cover shadow-2xl  group-hover:scale-110 transition-all duration-500 ease-in-out '
+                                className=' h-[50vh] md:h-[90vh] w-full object-cover shadow-2xl  group-hover:scale-110 transition-all duration-500 ease-in-out '
                                 alt='Project Image'
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}

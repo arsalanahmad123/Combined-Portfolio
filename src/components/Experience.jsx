@@ -7,7 +7,7 @@ const Experience = () => {
             data-scroll
             data-scroll-section
         >
-            <h1 className='text-9xl text-gray-800 monster font-bold'>
+            <h1 className='md:text-9xl text-5xl text-gray-800 monster font-bold'>
                 Experience
             </h1>
         </section>

@@ -22,7 +22,14 @@ function App() {
 
     return (
         <>
-            <LocomotiveScrollProvider options={{ smooth: true }} watch={[]}>
+            <LocomotiveScrollProvider
+                options={{
+                    smooth: true,
+                    reloadOnPrerender: true,
+                    mobile: { smooth: true },
+                }}
+                watch={[]}
+            >
                 <main data-scroll-container ref={ref}>
                     <Hero />
                     <TextCarousel />
