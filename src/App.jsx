@@ -8,7 +8,7 @@ import Solutions from './components/Solutions'
 import Loader from './components/Loader'
 import SelectedWork from './components/SelectedWork'
 import Experience from './components/Experience'
-
+import SmoothScroll from './components/SmoothScroll'
 function App() {
     const [loading, setIsLoading] = useState(true)
 
@@ -20,17 +20,15 @@ function App() {
 
     return (
         <>
-            <main>
-                <Hero />
-                <TextCarousel />
-                <About />
-                <Services />
-                <Solutions />
-                <SelectedWork />
-                <Experience />
-                {loading && <Loader />}
-                motion
-            </main>
+            <Hero />
+            <TextCarousel />
+            <About />
+            <Services />
+            <Solutions />
+            <SelectedWork />
+            <Experience />
+            {loading && <Loader />}
+            <SmoothScroll />
         </>
     )
 }

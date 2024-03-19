@@ -22,7 +22,7 @@ const Hero = () => {
         <>
             <motion.div
                 id='hero'
-                className='flex justify-center items-center min-h-screen max-h-[120vh] bg-[#1a2c3a] relative'
+                className='flex md:justify-center justify-start items-center min-h-screen max-h-[120vh] bg-[#1a2c3a] relative'
                 initial='initial'
                 animate='animate'
                 variants={containerVariants}

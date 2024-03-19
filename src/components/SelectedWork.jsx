@@ -17,7 +17,7 @@ const SelectedWork = () => {
     return (
         <>
             <section
-                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-40 gap-y-28 mb-20 px-20 mt-10'
+                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-40 gap-y-28 mb-20 md:px-20 mt-10 px-2'
                 id='work'
             >
                 <h1 className='text-4xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '>
@@ -25,7 +25,7 @@ const SelectedWork = () => {
                 </h1>
 
                 <div className='w-full flex flex-col md:flex-row justify-start items-start  md:max-h-[100vh]   h-full max-h-[60vh]'>
-                    <div className='max-h-full md:w-2/3 bg-white bg-opacity-60'>
+                    <div className='max-h-full md:w-2/3 w-full bg-white bg-opacity-60'>
                         <div className='overflow-hidden  relative group'>
                             <motion.img
                                 key={selectedProject.image}
@@ -55,7 +55,7 @@ const SelectedWork = () => {
                             </motion.div>
                         </div>
                     </div>
-                    <div className='w-full flex flex-row md:flex-col bg-white md:w-1/3 overflow-hidden h-full'>
+                    <div className='w-full flex flex-row md:flex-col bg-white md:w-1/3 w-full overflow-hidden h-full'>
                         {projects.map((project, index) => (
                             <motion.h1
                                 className={`text-lg font-semibold poppins  h-full flex justify-center items-center cursor-pointer `}

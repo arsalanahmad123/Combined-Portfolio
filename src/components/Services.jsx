@@ -6,9 +6,9 @@ import { TbDeviceMobileCode as MobileIcon } from 'react-icons/tb'
 import { IoIosChatbubbles as ChatIcon } from 'react-icons/io'
 const Services = () => {
     const cardsVariants = {
-        initial: { opacity: 0, scale: 0.5 },
-        whileInView: { opacity: 1, scale: 1 },
-        exit: { opacity: 0, scale: 0 },
+        initial: { opacity: 0 },
+        whileInView: { opacity: 1 },
+        exit: { opacity: 0 },
     }
 
     return (
