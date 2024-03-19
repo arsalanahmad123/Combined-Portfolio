@@ -38,7 +38,7 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-li::before {
+#navlist::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -49,7 +49,7 @@ li::before {
     background: #1a2c3a;
 }
 
-li:hover::before {
+#navlist:hover::before {
     width: 100%;
     transition: all 0.5s ease-in-out;
 }

@@ -55,7 +55,7 @@ const SelectedWork = () => {
                             </motion.div>
                         </div>
                     </div>
-                    <div className='w-full flex flex-row md:flex-col bg-white md:w-1/3 w-full overflow-hidden h-full'>
+                    <div className='w-full flex flex-row md:flex-col bg-white md:w-1/3  overflow-hidden h-full'>
                         {projects.map((project, index) => (
                             <motion.h1
                                 className={`text-lg font-semibold poppins  h-full flex justify-center items-center cursor-pointer `}

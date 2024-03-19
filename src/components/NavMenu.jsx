@@ -16,19 +16,34 @@ const NavMenu = () => {
                 delay={2}
             >
                 <ul className='flex  flex-col gap-y-3 text-2xl'>
-                    <li className='cursor-pointer text-left relative'>
+                    <li
+                        id='navlist'
+                        className='cursor-pointer text-left relative'
+                    >
                         <a href='#hero'>Home</a>
                     </li>
-                    <li className='cursor-pointer text-left relative'>
+                    <li
+                        id='navlist'
+                        className='cursor-pointer text-left relative'
+                    >
                         <a href='#about'>About</a>
                     </li>
-                    <li className='cursor-pointer text-left relative'>
+                    <li
+                        id='navlist'
+                        className='cursor-pointer text-left relative'
+                    >
                         <a href='#services'>Services</a>
                     </li>
-                    <li className='cursor-pointer text-left relative'>
+                    <li
+                        id='navlist'
+                        className='cursor-pointer text-left relative'
+                    >
                         <a href='#work'>Work</a>
                     </li>
-                    <li className='cursor-pointer text-left relative'>
+                    <li
+                        id='navlist'
+                        className='cursor-pointer text-left relative'
+                    >
                         <a href='#solutions'>Solutions</a>
                     </li>
                 </ul>
