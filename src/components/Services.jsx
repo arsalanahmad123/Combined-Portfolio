@@ -15,18 +15,12 @@ const Services = () => {
         <>
             <section
                 className='bg-[#1a2c3a] poppins text-white flex justify-center items-center py-52 min-h-[150vh] max-h-[300vh] w-full  flex-col gap-y-10 overflow-hidden'
-                data-scroll-section
-                data-scroll
                 id='services'
             >
                 <motion.div
                     className='flex flex-col md:flex-row justify-between items-center px-5
                     gap-y-10 
                     '
-                    data-scroll
-                    data-scroll-direction='vertical'
-                    data-scroll-speed='-2'
-                    data-scroll-position='end'
                 >
                     <h3 className='md:text-6xl text-4xl font-semibold bg-gradient-to-t from-[#1a2c3a] to-[#f3f3f3] bg-clip-text text-transparent tracking-widest'>
                         SERVICES & DISCUSSIONS
@@ -36,13 +30,7 @@ const Services = () => {
                         Nam, atque?
                     </p>
                 </motion.div>
-                <motion.div
-                    className='w-[80%] mx-auto bg-white mt-20 rounded-md md:h-[400px] flex flex-col md:flex-row  justify-center items-center p-2 gap-x-2 monster gap-y-2'
-                    data-scroll
-                    data-scroll-speed='-1'
-                    data-scroll-direction='vertical'
-                    data-scroll-position='end'
-                >
+                <motion.div className='w-[80%] mx-auto bg-white mt-20 rounded-md md:h-[400px] flex flex-col md:flex-row  justify-center items-center p-2 gap-x-2 monster gap-y-2'>
                     <motion.div
                         className=' h-full w-full rounded-md flex justify-center items-center bg-white text-[#1a2c3a] transition-all duration-500 ease-in-out border-2 hover:border-[#1a2c3a] shadow-inner relative overflow-hidden group'
                         variants={cardsVariants}

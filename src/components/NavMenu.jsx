@@ -23,13 +23,13 @@ const NavMenu = () => {
                         <a href='#about'>About</a>
                     </li>
                     <li className='cursor-pointer text-left relative'>
-                        Skills
+                        <a href='#services'>Services</a>
                     </li>
                     <li className='cursor-pointer text-left relative'>
-                        Projects
+                        <a href='#work'>Work</a>
                     </li>
                     <li className='cursor-pointer text-left relative'>
-                        Contact
+                        <a href='#solutions'>Solutions</a>
                     </li>
                 </ul>
             </motion.div>

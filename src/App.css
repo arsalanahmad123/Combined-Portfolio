@@ -8,7 +8,6 @@ body {
     /* background: linear-gradient(to right, #ba909a, #a3bae0); */
     background: white;
     overflow-x: hidden;
-    overflow-y: hidden;
     scroll-behavior: smooth;
     position: relative;
 }

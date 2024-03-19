@@ -27,9 +27,6 @@ const Hero = () => {
                 animate='animate'
                 variants={containerVariants}
                 transition={{ duration: 1.5, ease: 'backInOut' }}
-                data-scroll
-                data-scroll-section
-                data-scroll-snap
             >
                 <div className='md:block absolute hidden top-0 left-96 h-16 w-16 bg-[#6d86ad]  rounded-full'></div>
                 <div className='md:block absolute hidden top-7 right-20 h-20 w-20  bg-[#b89099]  rounded-full'></div>

@@ -18,28 +18,13 @@ const SelectedWork = () => {
         <>
             <section
                 className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-40 gap-y-28 mb-20 px-20 mt-10'
-                data-scroll
-                data-scroll-section
-                data-scroll-snap
                 id='work'
             >
-                <h1
-                    className='text-4xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '
-                    data-scroll
-                    data-scroll-snap
-                    data-scroll-direction='vertical'
-                    data-scroll-speed='1'
-                >
+                <h1 className='text-4xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '>
                     Selected Work
                 </h1>
 
-                <div
-                    className='w-full flex flex-col md:flex-row justify-start items-start  md:max-h-[100vh]   h-full max-h-[60vh]'
-                    data-scroll
-                    data-scroll-snap
-                    data-scroll-direction='vertical'
-                    data-scroll-speed='-2'
-                >
+                <div className='w-full flex flex-col md:flex-row justify-start items-start  md:max-h-[100vh]   h-full max-h-[60vh]'>
                     <div className='max-h-full md:w-2/3 bg-white bg-opacity-60'>
                         <div className='overflow-hidden  relative group'>
                             <motion.img

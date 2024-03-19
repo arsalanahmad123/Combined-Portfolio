@@ -7,9 +7,6 @@ const Solutions = () => {
         <>
             <div
                 className='bg-white p-10 min-h-screen max-h-[200vh] w-full flex justify-center items-center  flex-col cursive relative'
-                data-scroll
-                data-scroll-section
-                data-scroll-snap
                 id='solutions'
             >
                 <motion.div
@@ -44,28 +41,10 @@ const Solutions = () => {
                         ease: 'backInOut',
                     }}
                 ></motion.div>
-                <img
-                    src={hands}
-                    loading='lazy'
-                    alt=''
-                    id='hands'
-                    data-scroll
-                    data-scroll-direction='vertical'
-                    data-scroll-speed='10'
-                />
-                <h1
-                    className='text-6xl italic tracking-widest'
-                    data-scroll
-                    data-scroll-direction='vertical'
-                    data-scroll-speed='-1'
-                >
+                <img src={hands} loading='lazy' alt='' id='hands' />
+                <h1 className='text-6xl italic tracking-widest'>
                     I craft{' '}
-                    <span
-                        data-scroll
-                        data-scroll-direction='horizontal'
-                        data-scroll-speed='5'
-                        className='solutions relative text-white z-50 font-bold px-5'
-                    >
+                    <span className='solutions relative text-white z-50 font-bold px-5'>
                         Solutions
                     </span>
                     , Not just Designs
