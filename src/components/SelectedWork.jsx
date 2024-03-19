@@ -17,17 +17,18 @@ const SelectedWork = () => {
     return (
         <>
             <section
-                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-40 gap-y-28 mb-20 px-20'
+                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-40 gap-y-28 mb-20 px-20 mt-10'
                 data-scroll
                 data-scroll-section
                 data-scroll-snap
+                id='work'
             >
                 <h1
-                    className='text-5xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '
+                    className='text-4xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '
                     data-scroll
                     data-scroll-snap
                     data-scroll-direction='vertical'
-                    data-scroll-speed='-2'
+                    data-scroll-speed='1'
                 >
                     Selected Work
                 </h1>

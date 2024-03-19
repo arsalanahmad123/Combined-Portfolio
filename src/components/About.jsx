@@ -7,6 +7,7 @@ const About = () => {
         <section
             className='min-h-screen md:max-h-[120vh] flex justify-around items-center w-full monster  bg-white title poppins md:pt-20 flex-col-reverse lg:flex-row relative pt-28 px-5 md:px-0'
             data-scroll-section
+            data-scroll 
             id='about'
         >
             <motion.div

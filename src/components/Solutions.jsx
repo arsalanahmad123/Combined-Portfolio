@@ -9,6 +9,8 @@ const Solutions = () => {
                 className='bg-white p-10 min-h-screen max-h-[200vh] w-full flex justify-center items-center  flex-col cursive relative'
                 data-scroll
                 data-scroll-section
+                data-scroll-snap
+                id='solutions'
             >
                 <motion.div
                     className='absolute top-0 left-0 bg-[#b89099] rounded-full h-16 w-16 border-8 border-spacing-10 border-slate-200 '

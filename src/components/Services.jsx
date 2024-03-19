@@ -16,6 +16,8 @@ const Services = () => {
             <section
                 className='bg-[#1a2c3a] poppins text-white flex justify-center items-center py-52 min-h-[150vh] max-h-[300vh] w-full  flex-col gap-y-10 overflow-hidden'
                 data-scroll-section
+                data-scroll
+                id='services'
             >
                 <motion.div
                     className='flex flex-col md:flex-row justify-between items-center px-5
