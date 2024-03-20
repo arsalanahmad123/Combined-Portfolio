@@ -5,17 +5,27 @@
 }
 
 body {
-    /* background: linear-gradient(to right, #ba909a, #a3bae0); */
     background: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    position: relative;
+    position: relative !important;
     height: 100vh;
     width: 100vw;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    height: 50px;
+    width: 20px;
+    background: #1a2c3a;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #b89099;
+    border-radius: 10px;
 }
 
 .card {

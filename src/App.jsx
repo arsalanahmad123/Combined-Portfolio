@@ -9,6 +9,8 @@ import Loader from './components/Loader'
 import SelectedWork from './components/SelectedWork'
 import Experience from './components/Experience'
 import SmoothScroll from './components/SmoothScroll'
+import Navigation from './components/Navigation'
+import Contact from './components/Contact'
 function App() {
     const [loading, setIsLoading] = useState(true)
 
@@ -20,6 +22,7 @@ function App() {
 
     return (
         <>
+            <Navigation />
             <Hero />
             <TextCarousel />
             <About />
@@ -27,6 +30,7 @@ function App() {
             <Solutions />
             <SelectedWork />
             <Experience />
+            <Contact />
             {loading && <Loader />}
             <SmoothScroll />
         </>

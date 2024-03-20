@@ -38,18 +38,15 @@ const Experience = () => {
                 <div className='relative'>
                     <img src={heroImage} alt='' className='z-50' />
                     <motion.div
-                        className='absolute md:top-0 md:right-5 lg:-right-2 bg-[#1a2c3a] lg:w-96 lg:h-96 md:w-80 md:h-80 rounded-full z-[-1] top-20 right-10 h-80 w-80'
-                        initial={{ opacity: 0, scale: 0, border: 0 }}
-                        animate={{
-                            opacity: 1,
-                            scale: 1,
-                            border: '20px solid orangered',
-                        }}
+                        className='absolute md:top-0 md:right-5 lg:right-0 bg-gradient-to-l from-[#b89099] to-[#6d86ad] lg:w-96 lg:h-96 md:w-80 md:h-80  z-[-1] top-20 right-10 h-80 w-80 rounded-lg'
+                        initial={{ rotate: 0 }}
+                        animate={{ rotate: -360 }}
                         transition={{
                             repeat: Infinity,
-                            repeatDelay: 1,
+                            repeatDelay: 2,
                             repeatType: 'mirror',
-                            duration: 2.5,
+                            duration: 3.5,
+                            ease: 'backInOut',
                         }}
                     ></motion.div>
                 </div>
