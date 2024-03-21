@@ -5,7 +5,7 @@ import heroImage from '../assets/hero-image.png'
 const Hero = () => {
     const textVariants = {
         initial: { opacity: 0, y: -100 },
-        whileInView: { opacity: 1, y: 0 },
+        animate: { opacity: 1, y: 0 },
         exit: { opacity: 0, y: -100 },
     }
 
@@ -27,7 +27,7 @@ const Hero = () => {
                             className='md:text-2xl text-lg title font-medium'
                             variants={textVariants}
                             initial='initial'
-                            whileInView='whileInView'
+                            animate='animate'
                             exit='exit'
                             transition={{
                                 duration: 1.5,
@@ -40,7 +40,7 @@ const Hero = () => {
                             className='lg:text-7xl text-5xl  font-bold leading-none title flex flex-col'
                             variants={textVariants}
                             initial='initial'
-                            whileInView='whileInView'
+                            animate='animate'
                             exit='exit'
                             transition={{
                                 duration: 1.5,
@@ -55,7 +55,7 @@ const Hero = () => {
                             className=' bg-gradient-to-r from-[#BA909A] to-[#A3BAE0]  text-white mt-5 py-2 text-center font-semibold rounded-md md:text-lg text-sm shadow-2xl px-3 lg:px-0'
                             variants={textVariants}
                             initial='initial'
-                            whileInView='whileInView'
+                            animate='animate'
                             exit='exit'
                             transition={{
                                 duration: 1.5,
@@ -69,7 +69,7 @@ const Hero = () => {
                             className='bg-[#1a2c3a]  w-full xl:w-[50%] text-white mt-5 py-3 text-center font-semibold rounded-md lg:text-2xl text-lg shadow-2xl px-3 lg:px-0'
                             variants={textVariants}
                             initial='initial'
-                            whileInView='whileInView'
+                            animate='animate'
                             exit='exit'
                             transition={{
                                 duration: 1.5,

@@ -8,9 +8,9 @@ import Solutions from './components/Solutions'
 import Loader from './components/Loader'
 import SelectedWork from './components/SelectedWork'
 import Experience from './components/Experience'
-import SmoothScroll from './components/SmoothScroll'
 import Navigation from './components/Navigation'
 import Contact from './components/Contact'
+import Background from './components/Background'
 function App() {
     const [loading, setIsLoading] = useState(true)
 
@@ -31,8 +31,8 @@ function App() {
             <SelectedWork />
             <Experience />
             <Contact />
+            <Background />
             {loading && <Loader />}
-            <SmoothScroll />
         </>
     )
 }

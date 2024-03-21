@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import solution from '../assets/solution.png'
 const SelectedWork = () => {
     const [projects, setProjects] = useState([
         {
@@ -16,82 +17,87 @@ const SelectedWork = () => {
 
     return (
         <>
+            <img src={solution} alt='' />
             <section
-                className='w-full  min-h-screen max-h-[300vh] flex justify-start items-center bg-[#1a2c3a] flex-col py-40 gap-y-28 mb-20 md:px-20 mt-10 px-2'
+                className='w-full  flex justify-start items-center flex-col gap-y-28 mb-20 md:px-20  px-2 relative'
                 id='work'
             >
-                <h1 className='text-4xl md:text-7xl font-semibold tracking-widest poppins bg-clip-text text-white whitespace-nowrap '>
+                <h1 className='text-4xl md:text-7xl font-semibold tracking-widest poppins title whitespace-nowrap  shadow-text'>
                     Selected Work
                 </h1>
-
-                <div className='w-full flex flex-col md:flex-row md:justify-start md:items-start  md:max-h-[100vh]   h-full max-h-[60vh] justify-center items-center'>
-                    <div className='max-h-full md:w-2/3 w-full bg-white bg-opacity-60'>
-                        <div className='overflow-hidden  relative group'>
-                            <motion.img
-                                key={selectedProject.image}
-                                src={selectedProject.image}
-                                className=' h-[50vh] md:h-[90vh] w-full object-cover shadow-2xl  group-hover:scale-110 transition-all duration-500 ease-in-out '
-                                alt='Project Image'
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{
-                                    duration: 1.5,
-                                    ease: 'backInOut',
-                                }}
-                                loading='lazy'
+                <motion.div className='grid grid-cols-1 md:grid-cols-3 grid-rows-2 w-full gap-10  poppins'>
+                    <div className='flex flex-col justify-start items-start gap-y-5 bg-white  rounded-lg shadow-2xl max-h-[540px]'>
+                        <img
+                            src='https://images.unsplash.com/photo-1526779259212-939e64788e3c'
+                            alt=''
+                        />
+                        <h1 className='text-3xl mx-4 font-semibold monster'>
+                            First Project
+                        </h1>
+                        <p className='text-lg mx-4'>
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <button className='text-base mx-4 px-2 py-1 bg-[#1a2c3a] text-white'>
+                            View Project
+                        </button>
+                    </div>
+                    <div className=' bg-white grid grid-rows-4 rounded-lg p-5 gap-y-3 col-span-2 shadow-2xl shadow-[#1a2c3a]'>
+                        <div className='flex flex-row justify-start items-star bg-white rounded-lg row-span-2 gap-x-4'>
+                            <img
+                                src='https://images.unsplash.com/photo-1526779259212-939e64788e3c'
+                                className='w-1/2'
+                                alt=''
                             />
-                            <motion.div
-                                key={selectedProject.name}
-                                className=' poppins  text-white hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:block group-hover:opacity-100 opacity-0 transition-all duration-500 ease-in-out bg-black md:px-40 w-full md:py-96 bg-opacity-75 py-60 px-2'
-                            >
-                                <h1 className='md:text-6xl text-4xl font-semibold'>
-                                    {selectedProject.name}
+                            <div className='flex flex-col gap-y-2 mt-1 justify-center'>
+                                <h1 className='text-3xl font-semibold monster'>
+                                    Second Project
                                 </h1>
-                                <p className='text-lg mt-2'>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nostrum, quidem!
+                                <p className='text-lg'>
+                                    Lorem ipsum dolor sit amet.
                                 </p>
-                            </motion.div>
+                                <button className='text-base px-2 py-1 bg-[#1a2c3a] text-white '>
+                                    View Project
+                                </button>
+                            </div>
+                        </div>
+                        <div className='flex flex-row justify-start items-star bg-white rounded-lg row-span-2 gap-x-4'>
+                            <img
+                                src='https://images.unsplash.com/photo-1526779259212-939e64788e3c'
+                                className='w-1/2'
+                                alt=''
+                            />
+                            <div className='flex flex-col gap-y-2 mt-1 justify-center'>
+                                <h1 className='text-3xl font-semibold monster'>
+                                    Second Project
+                                </h1>
+                                <p className='text-lg'>
+                                    Lorem ipsum dolor sit amet.
+                                </p>
+                                <button className='text-base px-2 py-1 bg-[#1a2c3a] text-white '>
+                                    View Project
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div className='w-full flex flex-row md:flex-col bg-white md:w-1/3  overflow-hidden h-full'>
-                        {projects.map((project, index) => (
-                            <motion.h1
-                                className={`text-lg font-semibold poppins  h-full flex justify-center items-center cursor-pointer `}
-                                key={index}
-                                onClick={() => {
-                                    setSelectedProject({
-                                        name: project.name,
-                                        image: project.image,
-                                    })
-                                }}
-                                whileHover={{
-                                    backgroundColor: '#6d86ad',
-                                    color: '#ffffff', // Convert text color to hex format
-                                }}
-                                whileTap={{
-                                    scale: 0.5,
-                                    backgroundColor: '#6d86ad',
-                                    color: '#ffffff', // Convert text color to hex format
-                                }}
-                                transition={{
-                                    duration: 0.2,
-                                }}
-                            >
-                                <span
-                                    className={` p-2 w-full text-center transition-all duration-500 ease-in-out ${
-                                        selectedProject.name === project.name
-                                            ? 'bg-[#6d86ad] text-white'
-                                            : 'bg-white text-black'
-                                    }`}
-                                >
-                                    {project.name}
-                                </span>
-                            </motion.h1>
-                        ))}
+                    <div className='flex flex-row justify-start items-start gap-x-4 col-span-3 row-span-4 bg-white rounded-lg max-h-[500px] shadow-2xl shadow-[#6d86ad]'>
+                        <img
+                            src='https://images.unsplash.com/photo-1526779259212-939e64788e3c'
+                            className='w-1/2 h-full'
+                            alt=''
+                        />
+                        <div className='flex flex-col gap-y-2 mt-1 justify-center py-10'>
+                            <h1 className='text-5xl font-semibold monster'>
+                                Third Project
+                            </h1>
+                            <p className='text-lg'>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <button className='text-base px-2 py-1 bg-[#1a2c3a] text-white '>
+                                View Project
+                            </button>
+                        </div>
                     </div>
-                </div>
+                </motion.div>
             </section>
         </>
     )

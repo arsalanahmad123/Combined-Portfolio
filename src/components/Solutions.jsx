@@ -1,10 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import hands from '../assets/hands.png'
+import mesh from '../assets/mesh.png'
 
 const Solutions = () => {
     return (
         <>
+            <img
+                src={mesh}
+                alt=''
+                className='w-full h-[500px] object-cover -mt-80'
+            />
             <div
                 className='bg-white p-10 min-h-screen max-h-[200vh] w-full flex justify-center items-center  flex-col cursive relative'
                 id='solutions'

@@ -9,8 +9,6 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
     position: relative !important;
-    height: 100vh;
-    width: 100vw;
 }
 
 html {
@@ -20,7 +18,7 @@ html {
 html::-webkit-scrollbar {
     height: 50px;
     width: 20px;
-    background: #1a2c3a;
+    background: white;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -30,6 +28,10 @@ html::-webkit-scrollbar-thumb {
 
 .card {
     background: linear-gradient(45deg, #6d86ad, #c3fafc, #b89099);
+}
+
+.shadow-text {
+    text-shadow: 0 0px 10px #6d86ad;
 }
 
 .title {
