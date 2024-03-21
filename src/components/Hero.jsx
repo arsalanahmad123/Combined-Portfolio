@@ -15,9 +15,9 @@ const Hero = () => {
                 id='hero'
                 className='flex md:justify-center justify-start items-center min-h-screen max-h-[120vh] bg-[#1a2c3a] relative'
             >
-                <div className='md:block absolute hidden top-0 left-96 h-16 w-16 bg-[#6d86ad]  rounded-full'></div>
-                <div className='md:block absolute hidden top-7 right-20 h-20 w-20  bg-[#b89099]  rounded-full'></div>
-                <div className='md:block absolute hidden bottom-0 right-5 h-24 w-24  bg-[#6d86ad] z-50 rounded-full'></div>
+                <div className='md:block absolute hidden top-0 left-96 h-10 w-10 bg-[#6d86ad]  rounded-full'></div>
+                <div className='md:block absolute hidden top-7 right-20 h-16 w-16  bg-[#b89099]  rounded-full'></div>
+                <div className='md:block absolute hidden bottom-0 right-5 h-16 w-16  bg-[#6d86ad] z-50 rounded-full'></div>
                 <div className='md:block absolute hidden bottom-16 left-5 h-10 w-10  bg-[#b89099]  rounded-full z-50'></div>
                 <div className='md:block absolute hidden top-40 left-96 h-4 w-4  bg-[#b89099]  rounded-full z-50'></div>
 
