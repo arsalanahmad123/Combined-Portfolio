@@ -11,6 +11,7 @@ import Experience from './components/Experience'
 import Navigation from './components/Navigation'
 import Contact from './components/Contact'
 import Background from './components/Background'
+import Information from './components/Information'
 function App() {
     const [loading, setIsLoading] = useState(true)
 
@@ -32,6 +33,7 @@ function App() {
             <Experience />
             <Contact />
             <Background />
+            <Information />
             {loading && <Loader />}
         </>
     )

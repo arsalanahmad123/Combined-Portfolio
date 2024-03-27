@@ -9,7 +9,7 @@ const About = () => {
             id='about'
         >
             <motion.div
-                className='md:block md:absolute md:top-10 hidden left-10 bg-[#b89099]  h-20 w-20 clip-path'
+                className='md:block md:absolute md:top-0 hidden left-5 bg-[#b89099]  h-20 w-20 clip-path'
                 initial={{ opacity: 0, scale: 0, rotate: 0 }}
                 animate={{ opacity: 1, scale: 1, rotate: 360 }}
                 transition={{

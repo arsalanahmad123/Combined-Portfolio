@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { LuMenu as MenuIcon } from 'react-icons/lu'
 import { IoClose as CloseIcon } from 'react-icons/io5'
 import NavMenu from './NavMenu'
+import { motion } from 'framer-motion'
 
 const Navigation = () => {
     const [active, setIsActive] = useState(false)
@@ -31,6 +32,16 @@ const Navigation = () => {
                     </button>
                 )}
             </div>
+
+            <motion.button
+                className='fixed bottom-2 left-1 px-3 py-2 rounded-md bg-[orangered] text-white shadow-lg shadow-[orangered] monster font-semibold'
+                style={{ zIndex: 1100 }}
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.9 }}
+            >
+                Download Resume
+            </motion.button>
         </div>
     )
 }
