@@ -20,7 +20,7 @@ const Services = () => {
                     gap-y-10 
                     '
                 >
-                    <h3 className='md:text-6xl text-4xl font-semibold bg-gradient-to-t from-[#1a2c3a] to-[#f3f3f3] bg-clip-text text-transparent tracking-widest'>
+                    <h3 className='md:text-6xl text-4xl font-semibold bg-gradient-to-t from-primary to-secondary bg-clip-text text-transparent tracking-widest'>
                         SERVICES & DISCUSSIONS
                     </h3>
                     <p className='text-lg mb-10 text-center'>
@@ -40,7 +40,7 @@ const Services = () => {
                             ease: 'backInOut',
                         }}
                     >
-                        <motion.div className='absolute  -top-2 -left-2 bg-[#b89099] rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
+                        <motion.div className='absolute  -top-2 -left-2 bg-tertiary rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
                         <div
                             className='flex flex-col w-fit justify-center items-center gap-y-7
                         z-50'
@@ -64,7 +64,7 @@ const Services = () => {
                             ease: 'backInOut',
                         }}
                     >
-                        <motion.div className='absolute  -top-2 -left-2 bg-[#b89099] rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
+                        <motion.div className='absolute  -top-2 -left-2 bg-tertiary rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
 
                         <motion.div
                             className='flex flex-col w-fit justify-center items-center gap-y-7
@@ -90,7 +90,7 @@ const Services = () => {
                             ease: 'backInOut',
                         }}
                     >
-                        <motion.div className='absolute  -top-2 -left-2 bg-[#b89099] rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
+                        <motion.div className='absolute  -top-2 -left-2 bg-tertiary rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
 
                         <motion.div
                             className='flex flex-col w-fit justify-center items-center gap-y-7
@@ -116,7 +116,7 @@ const Services = () => {
                             ease: 'backInOut',
                         }}
                     >
-                        <motion.div className='absolute  -top-2 -left-2 bg-[#b89099] rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
+                        <motion.div className='absolute  -top-2 -left-2 bg-tertiary rounded-md h-10 w-10   group-hover:h-[200%] group-hover:w-[160%]  transition-all duration-500 ease-linear z-10  '></motion.div>
 
                         <motion.div
                             className='flex flex-col w-fit justify-center items-center gap-y-7

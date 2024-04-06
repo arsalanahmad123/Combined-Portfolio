@@ -38,6 +38,12 @@ html::-webkit-scrollbar-thumb {
 
 .title {
     color: #1a2c3a;
+    text-shadow: 0 0px 10px #6d86ad;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-style: italic;
 }
 
 .subtitle {
@@ -133,11 +139,4 @@ html.has-scroll-smooth {
         border-radius: 50px;
         line-height: 8.5rem;
     }
-}
-
-#contact-details {
-    background: url('../src/assets/wave.svg') no-repeat center bottom;
-    background-size: cover;
-    min-height: 100vh;
-    width: 100%;
 }

@@ -5,7 +5,7 @@ import aboutImage from '../assets/about.png'
 const About = () => {
     return (
         <section
-            className='min-h-screen md:max-h-[120vh] flex justify-around items-center w-full monster  bg-white title poppins md:pt-20 flex-col-reverse lg:flex-row relative pt-28 px-5 md:px-0'
+            className='min-h-screen md:max-h-[120vh] flex justify-around items-center w-full monster  bg-white text-[#1a2c3a] poppins md:pt-20 flex-col-reverse lg:flex-row relative pt-28 px-5 md:px-0'
             id='about'
         >
             <motion.div

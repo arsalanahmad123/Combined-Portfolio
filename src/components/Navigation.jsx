@@ -34,7 +34,7 @@ const Navigation = () => {
             </div>
 
             <motion.button
-                className='fixed bottom-2 left-1 px-3 py-2 rounded-md bg-[orangered] text-white shadow-lg shadow-[orangered] monster font-semibold'
+                className='fixed bottom-2 left-1 px-3 py-2 rounded-md bg-tertiary text-black  shadow-lg shadow-primary monster font-semibold'
                 style={{ zIndex: 1100 }}
                 initial={{ scale: 1 }}
                 whileHover={{ scale: 1.05 }}
