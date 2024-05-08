@@ -32,7 +32,7 @@ function App() {
             <SelectedWork />
             <Experience />
             <Contact />
-            <Background />
+            {/* <Background /> */}
             <Information />
             {loading && <Loader />}
         </>
