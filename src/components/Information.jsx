@@ -16,7 +16,7 @@ const Information = () => {
                 <h1 className='md:text-7xl text-4xl text-white font-bold text-center monster -mt-96'>
                     Contact Details
                 </h1>
-                <div className='flex flex-col  justify-center items-start poppins gap-y-1 mx-auto px-10 py-3 bg-white/10 backdrop-blur-3xl shadow-lg rounded-md w-fit'>
+                <div className='flex flex-col  justify-center items-start poppins gap-y-1 mx-auto px-10 py-3 bg-white/10 backdrop-blur-3xl shadow-lg rounded-md md:w-[50%]'>
                     <div className='flex flex-row text-white gap-x-6 justify-between items-center  p-2'>
                         <img
                             src={mail}

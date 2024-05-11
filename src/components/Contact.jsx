@@ -38,7 +38,7 @@ const Contact = () => {
                         ease: 'backInOut',
                     }}
                 ></motion.div>
-                <div className=' flex justify-between items-center flex-row-reverse  gap-x-5 md:px-20 px-5 gap-y-5 '>
+                <div className=' flex justify-between items-center lg:flex-row-reverse  gap-x-5 md:px-20 px-5 gap-y-5 flex-col'>
                     <img src={formImage} className='w-[45%]' alt='' />
                     <div className='flex flex-col gap-y-5 p-10 rounded-lg'>
                         <h1 className='text-gray-800 md:text-7xl font-bold monster text-center text-3xl'>
